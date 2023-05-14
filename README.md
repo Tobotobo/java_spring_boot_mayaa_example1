@@ -1,7 +1,7 @@
 # java_spring_boot_mayaa_example1
 
 ## 概要
-- Spring Boot で テンプレートエンジンに Mayaa を使用するサンプル
+- Spring Boot で テンプレートエンジンに Mayaa を使用するサンプルプログラム
 - 出力は war ファイル
 - 実行は Spring Boot 内臓の Tomcat は使わず Community Server Connector を使用
 
@@ -21,7 +21,7 @@
 ## 実行方法
 1. VSCode の拡張機能で Community Server Connector をインストール
 1. apache-tomcat-9.0.41 を作成
-1. build_war.bat を実行し target フォルダ内に demo.war を作成
+1. build_war.bat を実行(Ctrl+Shift+B)し target フォルダ内に demo.war を作成
 1. demo.war を右クリックし Run on Server で apache-tomcat-9.0.41 にデプロイ
 
 次回以降、既にデプロイが済んでいれば、apache-tomcat-9.0.41 を起動して build_war.bat を実行するだけで反映される。  
@@ -43,6 +43,11 @@ backgroundProcessorDelay を追加する。(単位は秒)
     unpackWARs="true" autoDeploy="true"
     backgroundProcessorDelay="1">
 ```
+
+## 構成
+- example1  
+  Mayaa - 2-6. HTML 部品 (動的)  - コンポーネントで親ページの変数を使う
+  http://mayaa.seasar.org/documentation/component2.html
 
 ## メモ
 - コンテキストルートに default.mayaa を作成することでページ共通の設定ができる  
